@@ -6,7 +6,6 @@
     }
     .navbar{
         text-align: center;
-        padding-bottom: 10px;
         border: 2px solid cornflowerblue;
         border-left: none;
         border-right: none;
@@ -17,8 +16,8 @@
     }
     li{
         display: inline-flex;
-        padding-right: 50px;
-        padding-top: 10px
+        padding-right: 10px;
+        padding-left: 10px;
     }
     a{
         text-decoration: none;
@@ -29,6 +28,13 @@
     }
     a:active{
         color: green;
+    }
+    .open{
+        background-color: bisque;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 </style>
 <html>
@@ -48,7 +54,7 @@
         <li><a href="AdjustingEntries.html">Adjusting entries</a></li>
         <li><a href="Worksheet.html">Worksheet</a></li>
         <li><a href="IncomeStatement.html">Income Statement</a></li>
-        <li><a href="ChangesInOE.html">Statement of Changes in OE</a></li>
+        <li class="open"><a href="ChangesInOE.html">Statement of Changes in OE</a></li>
         <li><a href="BalanceSheet.html">Balance Sheet</a></li>
     </ul>
 </nav>

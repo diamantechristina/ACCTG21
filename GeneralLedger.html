@@ -6,7 +6,6 @@
     }
     .navbar{
         text-align: center;
-        padding-bottom: 10px;
         border: 2px solid cornflowerblue;
         border-left: none;
         border-right: none;
@@ -17,8 +16,8 @@
     }
     li{
         display: inline-flex;
-        padding-right: 50px;
-        padding-top: 10px
+        padding-right: 10px;
+        padding-left: 10px;
     }
     a{
         text-decoration: none;
@@ -29,6 +28,27 @@
     }
     a:active{
         color: green;
+    }
+    td{
+        font-family: Arial,Serif;
+    }
+    .noBorder{
+        border: none;
+        padding: 0px;
+    }
+    table{
+        table-layout: auto;
+        text-align: center;
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 2%;
+    }
+    .open{
+        background-color: bisque;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 </style>
 <html>
@@ -44,7 +64,7 @@
     <ul>
         <li><a href="Problem.html">Problem</a></li>
         <li><a href="GeneralJournal.html">General Journal</a></li>
-        <li><a href="GeneralLedger.html">Posting to the Ledger</a></li>
+        <li class="open"><a href="GeneralLedger.html">Posting to the Ledger</a></li>
         <li><a href="AdjustingEntries.html">Adjusting entries</a></li>
         <li><a href="Worksheet.html">Worksheet</a></li>
         <li><a href="IncomeStatement.html">Income Statement</a></li>
@@ -52,5 +72,19 @@
         <li><a href="BalanceSheet.html">Balance Sheet</a></li>
     </ul>
 </nav>
+<div>
+    <table>
+        <tr>
+            <td class="noBorder">Dr. Nick Marasigan, M.D.</td>
+        </tr>
+        <tr>
+            <td class="noBorder">General Ledger</td>
+        </tr>
+        <tr>
+            <td class="noBorder">For the month ended October 31,2022</td>
+        </tr>
+    </table>
+</div>
+
 </body>
 </html>

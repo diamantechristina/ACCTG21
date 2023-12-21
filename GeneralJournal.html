@@ -6,7 +6,6 @@
     }
     .navbar{
         text-align: center;
-        padding-bottom: 10px;
         border: 2px solid cornflowerblue;
         border-left: none;
         border-right: none;
@@ -17,8 +16,8 @@
     }
     li{
         display: inline-flex;
-        padding-right: 50px;
-        padding-top: 10px
+        padding-right: 10px;
+        padding-left: 10px;
     }
     a{
         text-decoration: none;
@@ -29,6 +28,52 @@
     }
     a:active{
         color: green;
+    }
+    table{
+        table-layout: auto;
+        text-align: center;
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 2%;
+        border: 2px solid;
+    }
+    .output{
+        width: 80%;
+    }
+    td{
+        border: 1px solid;
+        font-family: Arial,Serif;
+        padding: 2px;
+    }
+    .noBorder{
+        border: none;
+        padding: 0px;
+    }
+    .accountTitle{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .separate{
+        height: 20px;
+    }
+    .dates{
+        text-align: right;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .whitespace{
+        margin-bottom: 100px;
+    }
+    .bold{
+        font-weight: bold;
+        border: 2px solid;
+    }
+    .open{
+        background-color: bisque;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 </style>
 <html>
@@ -43,7 +88,7 @@
 <nav class="navbar">
     <ul>
         <li><a href="Problem.html">Problem</a></li>
-        <li><a href="GeneralJournal.html">General Journal</a></li>
+        <li class="open"><a href="GeneralJournal.html">General Journal</a></li>
         <li><a href="GeneralLedger.html">Posting to the Ledger</a></li>
         <li><a href="AdjustingEntries.html">Adjusting entries</a></li>
         <li><a href="Worksheet.html">Worksheet</a></li>
@@ -52,5 +97,386 @@
         <li><a href="BalanceSheet.html">Balance Sheet</a></li>
     </ul>
 </nav>
+<div>
+    <table class="noBorder">
+        <tr>
+            <td class="noBorder">Dr. Nick Marasigan, M.D.</td>
+        </tr>
+        <tr>
+            <td class="noBorder">General Journal</td>
+        </tr>
+        <tr>
+            <td class="noBorder">For the month ended October 31,2022</td>
+        </tr>
+    </table>
+</div>
+<div class="whitespace">
+    <table class="output">
+        <tr>
+            <td class="bold">Date</td>
+            <td class="bold">Particulars</td>
+            <td class="bold">PR</td>
+            <td class="bold">Debit</td>
+            <td class="bold">Credit</td>
+        </tr>
+        <tr>
+            <td class="dates">Oct 1</td>
+            <td class="accountTitle">Cash</td>
+            <td>110</td>
+            <td>250,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Marasigan, Capital</td>
+            <td>310</td>
+            <td></td>
+            <td>250,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">Medical Building</td>
+            <td>160</td>
+            <td>1,000,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">Land</td>
+            <td>150</td>
+            <td>250,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>50,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;20% Notes Payable</td>
+            <td>220</td>
+            <td></td>
+            <td>1,200,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">Medical Equipment</td>
+            <td>170</td>
+            <td>420,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">Medical Supplies</td>
+            <td>130</td>
+            <td>39,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>59,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;24% Notes Payable</td>
+            <td>210</td>
+            <td></td>
+            <td>400,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">2</td>
+            <td class="accountTitle"w>Insurance Expense</td>
+            <td>520</td>
+            <td>20,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>20,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">4</td>
+            <td class="accountTitle">Cash</td>
+            <td>110</td>
+            <td>117,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Medical Revenues</td>
+            <td>410</td>
+            <td></td>
+            <td>117,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">7</td>
+            <td class="accountTitle">Medical Supplies</td>
+            <td>130</td>
+            <td>17,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Accounts Payable</td>
+            <td>230</td>
+            <td></td>
+            <td>17,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">10</td>
+            <td class="accountTitle">Salaries Expense</td>
+            <td>510</td>
+            <td>73,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>73,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">12</td>
+            <td class="accountTitle">Cash</td>
+            <td>110</td>
+            <td>90,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Unearned Research Revenue</td>
+            <td>260</td>
+            <td></td>
+            <td>90,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">18</td>
+            <td class="accountTitle">Accounts Receivable</td>
+            <td>120</td>
+            <td>317,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Medical Revenues</td>
+            <td>410</td>
+            <td></td>
+            <td>317,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">21</td>
+            <td class="accountTitle">Repairs Expense</td>
+            <td>530</td>
+            <td>23,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>23,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">23</td>
+            <td class="accountTitle">Telephone Expense</td>
+            <td>560</td>
+            <td>3,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>3,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">24</td>
+            <td class="accountTitle">Medical Equipment</td>
+            <td>170</td>
+            <td>45,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Accounts Payable</td>
+            <td>230</td>
+            <td></td>
+            <td>45,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">25</td>
+            <td class="accountTitle">Cash</td>
+            <td>110</td>
+            <td>113,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Accounts Receivable</td>
+            <td>120</td>
+            <td></td>
+            <td>113,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">27</td>
+            <td class="accountTitle">Accounts Payable</td>
+            <td>230</td>
+            <td>13,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>13,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="dates">30</td>
+            <td class="accountTitle">Marasigan, Withdrawals</td>
+            <td>320</td>
+            <td>200,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>200,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">Association Dues Expense</td>
+            <td>550</td>
+            <td>15,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Cash</td>
+            <td>110</td>
+            <td></td>
+            <td>15,000</td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

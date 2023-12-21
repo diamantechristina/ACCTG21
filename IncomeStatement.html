@@ -6,7 +6,6 @@
     }
     .navbar{
         text-align: center;
-        padding-bottom: 10px;
         border: 2px solid cornflowerblue;
         border-left: none;
         border-right: none;
@@ -17,8 +16,8 @@
     }
     li{
         display: inline-flex;
-        padding-right: 50px;
-        padding-top: 10px
+        padding-right: 10px;
+        padding-left: 10px;
     }
     a{
         text-decoration: none;
@@ -29,6 +28,40 @@
     }
     a:active{
         color: green;
+    }
+    table{
+        table-layout: auto;
+        text-align: center;
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 2%;
+    }
+    td{
+        border: 1px solid;
+        font-family: Arial,Serif;
+    }
+    .noBorder{
+        border: none;
+    }
+    .output {
+        width: 60%;
+    }
+    .col2{
+        padding-left: 100px;
+        text-align: right;
+    }
+    .separate{
+        height: 20px;
+    }
+    .whitespace{
+        margin-bottom: 100px;
+    }
+    .open{
+        background-color: bisque;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 </style>
 <html>
@@ -47,10 +80,46 @@
         <li><a href="GeneralLedger.html">Posting to the Ledger</a></li>
         <li><a href="AdjustingEntries.html">Adjusting entries</a></li>
         <li><a href="Worksheet.html">Worksheet</a></li>
-        <li><a href="IncomeStatement.html">Income Statement</a></li>
+        <li class="open"><a href="IncomeStatement.html">Income Statement</a></li>
         <li><a href="ChangesInOE.html">Statement of Changes in OE</a></li>
         <li><a href="BalanceSheet.html">Balance Sheet</a></li>
     </ul>
 </nav>
+<div>
+    <table class="noBorder">
+        <tr>
+            <td class="noBorder">Dr. Nick Marasigan, M.D.</td>
+        </tr>
+        <tr>
+            <td class="noBorder">Income Statement</td>
+        </tr>
+        <tr>
+            <td class="noBorder">For the month ended October 31,2022</td>
+        </tr>
+    </table>
+</div>
+<div class="whitespace">
+    <table class="output">
+        <tr>
+            <td>REVENUES</td>
+            <td class="col2">434,000</td>
+        </tr>
+        <tr>
+            <td>Medical Revenues</td>
+            <td class="col2">30,000</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td class="col2">464,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
