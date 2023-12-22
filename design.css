@@ -1,0 +1,111 @@
+body{
+    background:url(bg.png) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+a{
+    font-weight: bold;
+    transition: .3s;
+}
+a:hover{
+    color: bisque;
+    text-decoration: none; !important;
+    transition: .3s;
+}
+
+
+.open{
+    background-color: transparent; !important;
+}
+.open a {
+    color: orange; !important;
+
+}
+.problem{
+    margin-top: 10px;
+}
+tr{
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+tr:nth-child(1){
+    animation-delay: .2s;
+}
+tr:nth-child(2){
+    animation-delay: .4s;
+}
+tr:nth-child(3){
+    animation-delay: .6s;
+}
+tr:nth-child(4){
+    animation-delay: .8s;
+}
+tr:nth-child(5){
+    animation-delay: 1s;
+}
+tr:nth-child(6){
+    animation-delay: 1.2s;
+}
+tr:nth-child(7){
+    animation-delay: 1.4s;
+}
+tr:nth-child(8){
+    animation-delay: 1.6s;
+}
+tr:nth-child(9){
+    animation-delay: 1.8s;
+}
+tr:nth-child(10){
+    animation-delay: 2s;
+}
+tr:nth-child(11){
+    animation-delay: 2.2s;
+}
+tr:nth-child(12){
+    animation-delay: 2.4s;
+}
+tr:nth-child(13){
+    animation-delay: 2.6s;
+}
+tr:nth-child(14){
+    animation-delay: 2.8s;
+}
+tr:nth-child(15){
+    animation-delay: 3s;
+}
+tr:nth-child(16){
+    animation-delay: 3.2s;
+}
+tr:nth-child(17){
+    animation-delay: 3.4s;
+}
+table{
+    margin-bottom: 50px;
+}
+.head {
+    margin-top: 45px;
+    animation: topic 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+@keyframes topic {
+    0% {
+        letter-spacing: -1em;
+        opacity: 0;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 18px orange;
+    }
+}
+@keyframes fade-in{
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
