@@ -1,81 +1,9 @@
 <!DOCTYPE html>
-<style>
-    .head{
-        text-align: center;
-        font-family: Arial,Serif;
-    }
-    .navbar{
-        text-align: center;
-        border: 2px solid cornflowerblue;
-        border-left: none;
-        border-right: none;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-family: Arial,Serif;
-        font-size: small;
-    }
-    li{
-        display: inline-flex;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    a{
-        text-decoration: none;
-        color: darkslategray;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-    a:active{
-        color: green;
-    }
-    .open{
-        background-color: bisque;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    table{
-        table-layout: auto;
-        text-align: center;
-        border-collapse: collapse;
-        margin: auto;
-        margin-top: 2%;
-        border: 2px solid;
-    }
-    td{
-        border: 1px solid;
-        font-family: Arial,Serif;
-        padding: 2px;
-    }
-    .noBorder{
-        border: none;
-        padding: 0px;
-    }
-    .output{
-        width: 80%;
-    }
-    .accountTitle{
-        text-align: left;
-        padding-left: 10px;
-    }
-    .amount{
-        padding-left: 100px;
-        text-align: right;
-        padding-right: 5px;
-    }
-    .separate{
-        height: 20px;
-    }
-    .whitespace{
-        margin-bottom: 100px;
-    }
-</style>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Accounting Final Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="head">
@@ -96,31 +24,31 @@
 <div>
     <table class="noBorder">
         <tr>
-            <td class="noBorder">Dr. Nick Marasigan, M.D.</td>
+            <td class="tdNoBorder">Dr. Nick Marasigan, M.D.</td>
         </tr>
         <tr>
-            <td class="noBorder">Adjusting Entries</td>
+            <td class="tdNoBorder">Adjusting Entries</td>
         </tr>
         <tr>
-            <td class="noBorder">For the month ended October 31,2022</td>
+            <td class="tdNoBorder">For the month ended October 31,2022</td>
         </tr>
     </table>
 </div>
 <div class="whitespace">
     <table class="output">
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td>ACCOUNT TITLES</td>
             <td>DEBIT</td>
             <td>CREDIT</td>
         </tr>
-        <tr>
-            <td>A</td>
+        <tr class="trAdjusting">
+            <td class="pad">A</td>
             <td class="accountTitle">Insurance Expense</td>
             <td class="amount">1,666.67</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Prepaid Insurance</td>
             <td></td>
@@ -132,13 +60,13 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td>B</td>
             <td class="accountTitle">Supplies Expense</td>
             <td class="amount">35,000</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Medical Supplies</td>
             <td></td>
@@ -150,13 +78,13 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td>C</td>
             <td class="accountTitle">Depreciation Expense-Medical Building</td>
             <td class="amount">5,000</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Accumulated Depreciation-Medical Building</td>
             <td></td>
@@ -168,13 +96,13 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td class="accountTitle">Depreciation Expense-Medical Equipment</td>
             <td class="amount">9,000</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Accumulated Depreciation-Medical Equipment</td>
             <td></td>
@@ -186,13 +114,13 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td>D</td>
             <td class="accountTitle">Unearned Research Revenues</td>
             <td class="amount">30,000</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Research Revenues</td>
             <td></td>
@@ -204,13 +132,13 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td>E</td>
             <td class="accountTitle">Salaries Expense</td>
             <td class="amount">51,000</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Salaries Payable</td>
             <td></td>
@@ -222,19 +150,19 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td>F</td>
             <td class="accountTitle">Interest Expense</td>
             <td class="amount">28,000</td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Interest Payable</td>
             <td></td>
             <td class="amount">28,000</td>
         </tr>
-        <tr>
+        <tr class="trAdjusting">
             <td></td>
             <td></td>
             <td class="amount">159,666.67</td>

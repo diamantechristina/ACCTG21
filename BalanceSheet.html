@@ -1,46 +1,9 @@
 <!DOCTYPE html>
-<style>
-    .head{
-        text-align: center;
-        font-family: Arial,Serif;
-    }
-    .navbar{
-        text-align: center;
-        border: 2px solid cornflowerblue;
-        border-left: none;
-        border-right: none;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-family: Arial,Serif;
-        font-size: small;
-    }
-    li{
-        display: inline-flex;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    a{
-        text-decoration: none;
-        color: darkslategray;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-    a:active{
-        color: green;
-    }
-    .open{
-        background-color: bisque;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-</style>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Accounting Final Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="head">
@@ -58,5 +21,158 @@
             <li class="open"><a href="BalanceSheet.html">Balance Sheet</a></li>
         </ul>
     </nav>
+    <div>
+        <table class="noBorder">
+            <tr>
+                <td class="tdNoBorder">Dr. Nick Marasigan, M.D.</td>
+            </tr>
+            <tr>
+                <td class="tdNoBorder">Adjusting Entries</td>
+            </tr>
+            <tr>
+                <td class="tdNoBorder">For the month ended October 31,2022</td>
+            </tr>
+        </table>
+    </div>
+    <div class="whitespace">
+        <table class="output">
+            <tr>
+                <td class="accountTitle">ASSETS</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Current Assets</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Cash</td>
+                <td class="amount">114,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Accounts Receivable</td>
+                <td class="amount">204,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Medical Supplies</td>
+                <td class="amount">21,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Prepaid Insurance</td>
+                <td class="amount">18,333.33</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Total Current Assets</td>
+                <td class="amount">357,333.33</td>
+            </tr>
+            <tr class="separate">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">NON CURRENT ASSETS</td>
+                <td class="amount"></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Land</td>
+                <td class="amount">250,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Medical Building</td>
+                <td class="amount">1,000,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">LESS: Accumulated Depreciation-Medical Bldg.</td>
+                <td class="amount">(5,000)</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Medical Equipment</td>
+                <td class="amount">465,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">LESS: Accumulated Depreciation-Medical Equipt.</td>
+                <td class="amount">(9,000)</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Total Non Current Assets</td>
+                <td class="amount">1,701,000</td>
+            </tr>
+            <tr class="separate">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">TOTAL ASSETS</td>
+                <td class="amount">2,058,333.33</td>
+            </tr>
+            <tr class="separate">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">LIABILITY AND OWNER'S EQUITY</td>
+                <td></td>
+            </tr>
+            <tr class="separate">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">LIABILITY</td>
+                <td class="amount"></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">24% Notes Payable</td>
+                <td class="amount">400,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">20% Notes Payable</td>
+                <td class="amount">1,200,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Accounts Payable</td>
+                <td class="amount">49,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Salaries Payable</td>
+                <td class="amount">51,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Interest Payable</td>
+                <td class="amount">28,000</td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Unearned Research Revenues</td>
+                <td class="amount">60,000</td>
+            </tr>
+            <tr class="separate">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">TOTAL LIABILITY</td>
+                <td class="amount">1,788,000</td>
+            </tr>
+            <tr class="separate">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">OWNER'S EQUITY</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">Marasigan, Capital, Ending</td>
+                <td class="amount">270,333</td>
+            </tr>
+            <tr class="separate">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="accountTitle">TOTAL LIABILITY AND OWNER'S EQUITY</td>
+                <td class="amount">2,058,333.33</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

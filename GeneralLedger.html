@@ -1,60 +1,9 @@
 <!DOCTYPE html>
-<style>
-    .head{
-        text-align: center;
-        font-family: Arial,Serif;
-    }
-    .navbar{
-        text-align: center;
-        border: 2px solid cornflowerblue;
-        border-left: none;
-        border-right: none;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-family: Arial,Serif;
-        font-size: small;
-    }
-    li{
-        display: inline-flex;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    a{
-        text-decoration: none;
-        color: darkslategray;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-    a:active{
-        color: green;
-    }
-    td{
-        font-family: Arial,Serif;
-    }
-    .noBorder{
-        border: none;
-        padding: 0px;
-    }
-    table{
-        table-layout: auto;
-        text-align: center;
-        border-collapse: collapse;
-        margin: auto;
-        margin-top: 2%;
-    }
-    .open{
-        background-color: bisque;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-</style>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Accounting Final Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="head">
@@ -73,18 +22,360 @@
     </ul>
 </nav>
 <div>
-    <table>
+    <table class="noBorder">
         <tr>
-            <td class="noBorder">Dr. Nick Marasigan, M.D.</td>
+            <td class="tdNoBorder">Dr. Nick Marasigan, M.D.</td>
         </tr>
         <tr>
-            <td class="noBorder">General Ledger</td>
+            <td class="tdNoBorder">General Ledger</td>
         </tr>
         <tr>
-            <td class="noBorder">For the month ended October 31,2022</td>
+            <td class="tdNoBorder">For the month ended October 31,2022</td>
         </tr>
     </table>
 </div>
-
+<div class="ledgerOutput">
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">20% Notes Payable</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">1,200,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="tdNoBorder">1,200,000</td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">24% Notes Payable</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">400,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="tdNoBorder">400,000</td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Accounts Payable</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">13,000</td>
+            <td class="leftLineWidthLedger">17,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder"></td>
+            <td class="leftLineWidthLedger">45,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">13,000</td>
+            <td class="leftLineWidthLedger">62,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder"></td>
+            <td class="tdNoBorder">49,000</td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Accounts Receivable</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">317,000</td>
+            <td class="leftLineWidthLedger">113,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">114,000</td>
+            <td class="tdNoBorder"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Association Dues Expense</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">15,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">15,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">CASH</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">250,000</td>
+            <td class="leftLineWidthLedger">50,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">117,000</td>
+            <td class="leftLineWidthLedger">59,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">90,000</td>
+            <td class="leftLineWidthLedger">20,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">113,000</td>
+            <td class="leftLineWidthLedger">73,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">23,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">3,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">13,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">200,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">15,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">570,000</td>
+            <td class="leftLineWidthLedger">456,000</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">114,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Insurance Expense</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">20,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">20,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Land</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">250,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">250,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Marasigan, Capital</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">250,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="tdNoBorder">250,000</td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Marasigan, Capital</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">200,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">200,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Medical Building</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">1,000,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">1,000,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Medical Equipment</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">420,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">45,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">465,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Medical Supplies</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">39,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">17,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">56,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Repairs Expense</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">23,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">23,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Salaries Expense</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">73,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">73,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Telephone Expense</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">3,000</td>
+            <td class="empty2"></td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">3,000</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+    <table class="tAcc">
+        <tr>
+            <td colspan="2" class="tdNoBorder">Unearned Research Revenues</td>
+        </tr>
+        <tr>
+            <td class="borderBottom">Dr</td>
+            <td class="borderBottom">Cr</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="leftLineWidthLedger">90,000</td>
+        </tr>
+        <tr>
+            <td class="empty"></td>
+            <td class="empty">90,000</td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

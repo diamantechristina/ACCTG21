@@ -1,84 +1,9 @@
 <!DOCTYPE html>
-<style>
-    .head{
-        text-align: center;
-        font-family: Arial,Serif;
-    }
-    .navbar{
-        text-align: center;
-        border: 2px solid cornflowerblue;
-        border-left: none;
-        border-right: none;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-family: Arial,Serif;
-        font-size: small;
-    }
-    li{
-        display: inline-flex;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    a{
-        text-decoration: none;
-        color: darkslategray;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-    a:active{
-        color: green;
-    }
-    table{
-        table-layout: auto;
-        text-align: center;
-        border-collapse: collapse;
-        border: 2px solid;
-        margin: auto;
-        margin-top: 2%;
-    }
-    td{
-        border: 1px solid;
-        font-family: Arial,Serif;
-    }
-    .noBorder{
-        border: none;
-        padding: 0px;
-    }
-    .output{
-        width: 80%;
-    }
-    .accountTitle{
-        text-align: left;
-        padding-left: 10px;
-        border-right-width: 2px;
-        border-left-width: 2px;
-    }
-    .lineWidth{
-        border-width: 2px;
-        font-weight: bold;
-    }
-    .leftLineWidth{
-        border-left-width:2px;
-    }
-    .rightLineWidth{
-        border-right-width: 2px;
-    }
-    .whitespace{
-        margin-bottom: 100px;
-    }
-    .open{
-        background-color: bisque;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-</style>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Accounting Final Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="head">
@@ -99,18 +24,18 @@
 <div>
     <table class="noBorder">
         <tr>
-            <td class="noBorder">Dr. Nick Marasigan, M.D.</td>
+            <td class="tdNoBorder">Dr. Nick Marasigan, M.D.</td>
         </tr>
         <tr>
-            <td class="noBorder">Worksheet</td>
+            <td class="tdNoBorder">Worksheet</td>
         </tr>
         <tr>
-            <td class="noBorder">For the month ended October 31,2022</td>
+            <td class="tdNoBorder">For the month ended October 31,2022</td>
         </tr>
     </table>
 </div>
 <div class="whitespace">
-    <table class="output">
+    <table class="Output">
         <tr>
             <td class="lineWidth">Account Code</td>
             <td class="lineWidth">Account</td>
@@ -121,10 +46,8 @@
             <td colspan="2" class="lineWidth">Balance Sheet</td>
         </tr>
         <tr>
-            <td class="leftLineWidth"></td>
-            <td class="leftLineWidth"></td>
-            <td class="leftLineWidth">Debit</td>
-            <td class="rightLineWidth">Credit</td>
+            <td class="rightLineWidth"></td>
+            <td class="rightLineWidth"></td>
             <td>Debit</td>
             <td class="rightLineWidth">Credit</td>
             <td>Debit</td>
@@ -133,10 +56,12 @@
             <td class="rightLineWidth">Credit</td>
             <td>Debit</td>
             <td class="rightLineWidth">Credit</td>
+            <td>Debit</td>
+            <td>Credit</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">110</td>
-            <td class="accountTitle">Cash</td>
+            <td>110</td>
+            <td class="accountTitleWS">Cash</td>
             <td class="leftLineWidth">114,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -146,11 +71,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td>114,000</td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">120</td>
-            <td class="accountTitle">Accounts Receivable</td>
+            <td>120</td>
+            <td class="accountTitleWS">Accounts Receivable</td>
             <td>204,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -160,11 +85,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td>114,000</td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">130</td>
-            <td class="accountTitle">Medical Supplies</td>
+            <td>130</td>
+            <td class="accountTitleWS">Medical Supplies</td>
             <td>56,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -174,11 +99,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td>21,000</td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">140</td>
-            <td class="accountTitle">Prepaid Insurance</td>
+            <td>140</td>
+            <td class="accountTitleWS">Prepaid Insurance</td>
             <td>20,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -188,11 +113,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td>18,333.33</td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">150</td>
-            <td class="accountTitle">Land</td>
+            <td>150</td>
+            <td class="accountTitleWS">Land</td>
             <td>250,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -202,11 +127,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td>250,000</td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">160</td>
-            <td class="accountTitle">Medical Building</td>
+            <td>160</td>
+            <td class="accountTitleWS">Medical Building</td>
             <td>1,000,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -216,11 +141,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td>1,000,000</td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">165</td>
-            <td class="accountTitle">Accumulated Depreciation-Medical Building</td>
+            <td>165</td>
+            <td class="accountTitleWS">Accumulated Depreciation-Medical Building</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -230,11 +155,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">5,000</td>
+            <td>5,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">170</td>
-            <td class="accountTitle">Medical Equipment</td>
+            <td>170</td>
+            <td class="accountTitleWS">Medical Equipment</td>
             <td>465,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -244,11 +169,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td>456,000</td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">175</td>
-            <td class="accountTitle">Accumulated Depreciation-Medical Equipment</td>
+            <td>175</td>
+            <td class="accountTitleWS">Accumulated Depreciation-Medical Equipment</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -258,11 +183,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">9,000</td>
+            <td>9,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">210</td>
-            <td class="accountTitle">24% Notes Payable</td>
+            <td>210</td>
+            <td class="accountTitleWS">24% Notes Payable</td>
             <td></td>
             <td class="rightLineWidth">400,000</td>
             <td></td>
@@ -272,11 +197,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">400,000</td>
+            <td>400,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">220</td>
-            <td class="accountTitle">20% Notes Payable</td>
+            <td>220</td>
+            <td class="accountTitleWS">20% Notes Payable</td>
             <td></td>
             <td class="rightLineWidth">1,200,000</td>
             <td></td>
@@ -286,11 +211,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">1,200,000</td>
+            <td>1,200,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">230</td>
-            <td class="accountTitle">Accounts Payable</td>
+            <td>230</td>
+            <td class="accountTitleWS">Accounts Payable</td>
             <td></td>
             <td class="rightLineWidth">49,000</td>
             <td></td>
@@ -300,11 +225,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">49,000</td>
+            <td>49,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">240</td>
-            <td class="accountTitle">Salaries Payable</td>
+            <td>240</td>
+            <td class="accountTitleWS">Salaries Payable</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -314,11 +239,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">51,000</td>
+            <td>51,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">250</td>
-            <td class="accountTitle">Interest Payable</td>
+            <td>250</td>
+            <td class="accountTitleWS">Interest Payable</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -328,11 +253,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">28,000</td>
+            <td>28,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">260</td>
-            <td class="accountTitle">Unearned Research Revenue</td>
+            <td>260</td>
+            <td class="accountTitleWS">Unearned Research Revenue</td>
             <td></td>
             <td class="rightLineWidth">90,000</td>
             <td>30,000</td>
@@ -342,11 +267,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">60,000</td>
+            <td>60,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">310</td>
-            <td class="accountTitle">Marasigan, Capital</td>
+            <td>310</td>
+            <td class="accountTitleWS">Marasigan, Capital</td>
             <td></td>
             <td class="rightLineWidth">250,000</td>
             <td></td>
@@ -356,11 +281,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">250,000</td>
+            <td>250,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth">320</td>
-            <td class="accountTitle">Marasigan, Withdrawals</td>
+            <td>320</td>
+            <td class="accountTitleWS">Marasigan, Withdrawals</td>
             <td>200,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -370,11 +295,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td>200,000</td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">330</td>
-            <td class="accountTitle">Income Summary</td>
+            <td>330</td>
+            <td class="accountTitleWS">Income Summary</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -384,11 +309,11 @@
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">410</td>
-            <td class="accountTitle">Medical Revenues</td>
+            <td>410</td>
+            <td class="accountTitleWS">Medical Revenues</td>
             <td></td>
             <td class="rightLineWidth">434,000</td>
             <td></td>
@@ -398,11 +323,11 @@
             <td></td>
             <td class="rightLineWidth">434,000</td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">420</td>
-            <td class="accountTitle">Research Revenues</td>
+            <td>420</td>
+            <td class="accountTitleWS">Research Revenues</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -412,11 +337,11 @@
             <td></td>
             <td class="rightLineWidth">30,000</td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">510</td>
-            <td class="accountTitle">Salaries Expense</td>
+            <td>510</td>
+            <td class="accountTitleWS">Salaries Expense</td>
             <td>73,000</td>
             <td class="rightLineWidth"></td>
             <td>51,000</td>
@@ -426,11 +351,11 @@
             <td>124,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">520</td>
-            <td class="accountTitle">Insurance Expense</td>
+            <td>520</td>
+            <td class="accountTitleWS">Insurance Expense</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td>1,666.67</td>
@@ -440,11 +365,11 @@
             <td>1,666.67</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">530</td>
-            <td class="accountTitle">Repairs Expense</td>
+            <td>530</td>
+            <td class="accountTitleWS">Repairs Expense</td>
             <td>23,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -454,11 +379,11 @@
             <td>23,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">540</td>
-            <td class="accountTitle">Supplies Expense</td>
+            <td>540</td>
+            <td class="accountTitleWS">Supplies Expense</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td>35,000</td>
@@ -468,11 +393,11 @@
             <td>35,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">550</td>
-            <td class="accountTitle">Association Dues Expense</td>
+            <td>550</td>
+            <td class="accountTitleWS">Association Dues Expense</td>
             <td>15,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -482,11 +407,11 @@
             <td>15,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">560</td>
-            <td class="accountTitle">Telephone Expense</td>
+            <td>560</td>
+            <td class="accountTitleWS">Telephone Expense</td>
             <td>3,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
@@ -496,11 +421,11 @@
             <td>3,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">570</td>
-            <td class="accountTitle">Depreciation Expense-Bldg.</td>
+            <td>570</td>
+            <td class="accountTitleWS">Depreciation Expense-Bldg.</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td>5,000</td>
@@ -510,11 +435,11 @@
             <td>5,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">580</td>
-            <td class="accountTitle">Depreciation Expense-Equipt.</td>
+            <td>580</td>
+            <td class="accountTitleWS">Depreciation Expense-Equipt.</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td>9,000</td>
@@ -524,11 +449,11 @@
             <td>9,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth">590</td>
-            <td class="accountTitle">Interest Expense</td>
+            <td>590</td>
+            <td class="accountTitleWS">Interest Expense</td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td>28,000</td>
@@ -538,49 +463,49 @@
             <td>28,000</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth"></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="leftLineWidth"></td>
-            <td class="accountTitle">TOTAL</td>
-            <td>2,423,000</td>
-            <td class="rightLineWidth">2,423,000</td>
-            <td>159,666.67</td>
-            <td class="rightLineWidth">159,666.67</td>
-            <td>2,516,000</td>
-            <td class="rightLineWidth">2,516,000</td>
-            <td>243,667</td>
-            <td class="rightLineWidth">464,000</td>
-            <td>2,272,333.33</td>
-            <td class="rightLineWidth">2,052,000</td>
+            <td></td>
+            <td class="accountTitleWS">TOTAL</td>
+            <td style="padding-right: 10px; padding-left: 10px;">2,423,000</td>
+            <td class="rightLineWidth" style="padding-right: 10px; padding-left: 10px;">2,423,000</td>
+            <td style="padding-right: 10px; padding-left: 10px;">159,666.67</td>
+            <td class="rightLineWidth" style="padding-right: 10px; padding-left: 10px;">159,666.67</td>
+            <td style="padding-right: 10px; padding-left: 10px;">2,516,000</td>
+            <td class="rightLineWidth" style="padding-right: 10px; padding-left: 10px;">2,516,000</td>
+            <td style="padding-right: 10px; padding-left: 10px;">243,667</td>
+            <td class="rightLineWidth" style="padding-right: 10px; padding-left: 10px;">464,000</td>
+            <td style="padding-right: 10px; padding-left: 10px;">2,272,333.33</td>
+            <td style="padding-right: 10px; padding-left: 10px;">2,052,000</td>
         </tr>
         <tr>
-            <td class="leftLineWidth"></td>
-            <td class="accountTitle"></td>
+            <td></td>
+            <td class="accountTitleWS"></td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
             <td class="rightLineWidth"></td>
             <td></td>
             <td class="rightLineWidth"><b>Net Income</b></td>
-            <td>220,333.33</td>
+            <td style="padding-right: 10px; padding-left: 10px;">220,333.33</td>
             <td class="rightLineWidth"></td>
             <td></td>
-            <td class="rightLineWidth">220,333.33</td>
+            <td style="padding-right: 10px; padding-left: 10px;">220,333.33</td>
         </tr>
         <tr>
-            <td class="leftLineWidth"></td>
-            <td class="accountTitle"></td>
+            <td></td>
+            <td class="accountTitleWS"></td>
             <td class="leftLineWidth"></td>
             <td class="rightLineWidth"></td>
             <td class="leftLineWidth"></td>
             <td class="rightLineWidth"></td>
             <td class="leftLineWidth"></td>
             <td class="rightLineWidth"><b>Totals</b></td>
-            <td>464,000</td>
+            <td style="padding-right: 10px; padding-left: 10px;">464,000</td>
             <td class="rightLineWidth">464,000</td>
-            <td>2,272,333.33</td>
-            <td>2,272,333.33</td>
+            <td style="padding-right: 10px; padding-left: 10px;">2,272,333.33</td>
+            <td style="padding-right: 10px; padding-left: 10px;">2,272,333.33</td>
         </tr>
     </table>
 </div>
