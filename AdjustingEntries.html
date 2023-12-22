@@ -36,6 +36,41 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    table{
+        table-layout: auto;
+        text-align: center;
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 2%;
+        border: 2px solid;
+    }
+    td{
+        border: 1px solid;
+        font-family: Arial,Serif;
+        padding: 2px;
+    }
+    .noBorder{
+        border: none;
+        padding: 0px;
+    }
+    .output{
+        width: 80%;
+    }
+    .accountTitle{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .amount{
+        padding-left: 100px;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .separate{
+        height: 20px;
+    }
+    .whitespace{
+        margin-bottom: 100px;
+    }
 </style>
 <html>
 <head>
@@ -58,6 +93,154 @@
         <li><a href="BalanceSheet.html">Balance Sheet</a></li>
     </ul>
 </nav>
-
+<div>
+    <table class="noBorder">
+        <tr>
+            <td class="noBorder">Dr. Nick Marasigan, M.D.</td>
+        </tr>
+        <tr>
+            <td class="noBorder">Adjusting Entries</td>
+        </tr>
+        <tr>
+            <td class="noBorder">For the month ended October 31,2022</td>
+        </tr>
+    </table>
+</div>
+<div class="whitespace">
+    <table class="output">
+        <tr>
+            <td></td>
+            <td>ACCOUNT TITLES</td>
+            <td>DEBIT</td>
+            <td>CREDIT</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td class="accountTitle">Insurance Expense</td>
+            <td class="amount">1,666.67</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Prepaid Insurance</td>
+            <td></td>
+            <td class="amount">1,666.67</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td class="accountTitle">Supplies Expense</td>
+            <td class="amount">35,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Medical Supplies</td>
+            <td></td>
+            <td class="amount">35,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td class="accountTitle">Depreciation Expense-Medical Building</td>
+            <td class="amount">5,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Accumulated Depreciation-Medical Building</td>
+            <td></td>
+            <td class="amount">5,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">Depreciation Expense-Medical Equipment</td>
+            <td class="amount">9,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Accumulated Depreciation-Medical Equipment</td>
+            <td></td>
+            <td class="amount">9,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td class="accountTitle">Unearned Research Revenues</td>
+            <td class="amount">30,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Research Revenues</td>
+            <td></td>
+            <td class="amount">30,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td class="accountTitle">Salaries Expense</td>
+            <td class="amount">51,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Salaries Payable</td>
+            <td></td>
+            <td class="amount">51,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td class="accountTitle">Interest Expense</td>
+            <td class="amount">28,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="accountTitle">&emsp;&emsp;&emsp;&emsp;Interest Payable</td>
+            <td></td>
+            <td class="amount">28,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="amount">159,666.67</td>
+            <td class="amount">159,666.67</td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

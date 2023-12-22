@@ -35,10 +35,12 @@
         border-collapse: collapse;
         margin: auto;
         margin-top: 2%;
+        border: 2px solid;
     }
     td{
         border: 1px solid;
         font-family: Arial,Serif;
+        padding: 2px;
     }
     .noBorder{
         border: none;
@@ -46,9 +48,10 @@
     .output {
         width: 60%;
     }
-    .col2{
+    .amount{
         padding-left: 100px;
         text-align: right;
+        padding-right: 5px;
     }
     .separate{
         height: 20px;
@@ -62,6 +65,10 @@
         padding-left: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .accountTitle{
+        text-align: left;
+        padding-left: 10px;
     }
 </style>
 <html>
@@ -101,23 +108,76 @@
 <div class="whitespace">
     <table class="output">
         <tr>
-            <td>REVENUES</td>
-            <td class="col2">434,000</td>
+            <td><b>REVENUES</b></td>
+            <td></td>
         </tr>
         <tr>
-            <td>Medical Revenues</td>
-            <td class="col2">30,000</td>
+            <td class="accountTitle">Medical Revenues</td>
+            <td class="amount">434,000</td>
         </tr>
         <tr>
-            <td>Total</td>
-            <td class="col2">464,000</td>
+            <td class="accountTitle">Research Revenues</td>
+            <td class="amount">30,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Total</td>
+            <td class="amount">464,000</td>
         </tr>
         <tr class="separate">
             <td></td>
             <td></td>
         </tr>
         <tr>
+            <td><b>EXPENSES</b></td>
             <td></td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Salaries Expense</td>
+            <td class="amount">124,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Insurance Expense</td>
+            <td class="amount">1,667</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Repairs Expense</td>
+            <td class="amount">23,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Supplies Expense</td>
+            <td class="amount">35,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Association Dues Expense</td>
+            <td class="amount">15,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Telephone Expense</td>
+            <td class="amount">3,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Depreciation Expense-Bldg.</td>
+            <td class="amount">5,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Depreciation Expense-Equipt.</td>
+            <td class="amount">9,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Interest Expense</td>
+            <td class="amount">28,000</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Total</td>
+            <td class="amount">243,667</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Profit (Total Revenue - Total Expense)</td>
+            <td class="amount">220,333</td>
         </tr>
     </table>
 </div>
