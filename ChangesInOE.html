@@ -1,46 +1,9 @@
 <!DOCTYPE html>
-<style>
-    .head{
-        text-align: center;
-        font-family: Arial,Serif;
-    }
-    .navbar{
-        text-align: center;
-        border: 2px solid cornflowerblue;
-        border-left: none;
-        border-right: none;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-family: Arial,Serif;
-        font-size: small;
-    }
-    li{
-        display: inline-flex;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    a{
-        text-decoration: none;
-        color: darkslategray;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-    a:active{
-        color: green;
-    }
-    .open{
-        background-color: bisque;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-</style>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Accounting Final Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="head">
@@ -58,5 +21,50 @@
         <li><a href="BalanceSheet.html">Balance Sheet</a></li>
     </ul>
 </nav>
+<div>
+    <table class="noBorder">
+        <tr>
+            <td class="tdNoBorder">Dr. Nick Marasigan, M.D.</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">Statement of Changes in Owner's Equity</td>
+        </tr>
+        <tr>
+            <td class="tdNoBorder">For the month ended October 31,2022</td>
+        </tr>
+    </table>
+</div>
+<div class="whitespace">
+    <table>
+        <tr>
+            <td class="accountTitle">Marasigan, Capital, Starting</td>
+            <td class="amount">250,333.33</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">ADD: Profit</td>
+            <td class="amount">220,333.33</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Balance</td>
+            <td class="amount">470,333</td>
+        </tr>
+        <tr>
+            <td class="accountTitle">LESS: Marasigan, Withdrawal</td>
+            <td class="amount">200,000</td>
+        </tr>
+        <tr class="separate">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="accountTitle">Marasigan, Capital, Ending</td>
+            <td class="amount">270,333</td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

@@ -1,0 +1,188 @@
+html{
+    color: black;
+}
+.head{
+    text-align: center;
+    font-family: Arial,Serif;
+    color: white;
+    opacity: 70%;
+}
+body{
+    background: url("bg.png") no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.empty{
+    width: 50%;
+}
+.navbar{
+    text-align: center;
+    border: 2px solid cornflowerblue;
+    border-left: none;
+    border-right: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Arial,Serif;
+    font-size: small;
+}
+li{
+    display: inline-flex;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: green;
+}
+table{
+    table-layout: auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 2%;
+    border: 2px solid;
+    background-color: gray;
+    opacity: 85%;
+}
+.problem{
+    position: absolute;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-family: Arial,Serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 100px
+}
+.tableProb{
+    table-layout: auto;
+    border: none;
+    margin-bottom: 100px;
+}
+.output{
+    width: 70%;
+}
+.ledgerOutput{
+    margin-bottom: 100px;
+
+}
+.trProblem{
+    vertical-align: top;
+}
+.trAdjusting{
+    vertical-align: center;
+}
+td{
+    border: 1px solid;
+    font-family: Arial,Serif;
+    padding: 2px;
+}
+.prob1, .data, .second{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+.data, .second{
+    text-align: left;
+}
+.noBorder{
+    border: none;
+    padding: 0px;
+    background-color: gray;
+    opacity: 70%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.tdNoBorder{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.accountTitle{
+    text-align: left;
+    padding-left: 10px;
+}
+.accountTitleWS{
+    text-align: left;
+    padding-left: 10px;
+    border-right-width: 2px;
+    border-left-width: 2px;
+}
+.separate{
+    height: 20px;
+}
+.dates{
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.whitespace{
+    margin-bottom: 100px;
+}
+.bold{
+    font-weight: bold;
+    border: 2px solid;
+}
+.open{
+    background-color: darkorange;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+.lineWidth{
+    border-width: 2px;
+    font-weight: bold;
+}
+.leftLineWidth{
+    border: none;
+    border-left-width:2px;
+}
+.leftLineWidthLedger{
+    border: none;
+    border-left: 2px solid;
+}
+.rightLineWidth{
+    border-right-width: 2px;
+}
+.amount{
+    padding-left: 100px;
+    text-align: right;
+    padding-right: 5px;
+}
+.tAcc{
+    display: inline-flex;
+    border: none;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.ledgerOutput{
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.borderBottom{
+    border: none;
+    border-bottom: 2px solid;
+}
+.empty{
+    border: none;
+    width: 50%;
+}
+.empty2{
+    border: none;
+    border-left: 2px solid;
+    width: 50%;
+}
