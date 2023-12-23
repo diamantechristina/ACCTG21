@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    background:#1F2024;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.blob-c {
+    min-height: 100vh;
+    overflow: hidden;
+    position:absolute;
+    width: 100%;
+    filter: blur(40px);
+    /*   background: rgba(255,255,255,0.1) */
+}
+
+.shape-blob {
+    background:orange;
+    height: 300px;
+    width: 280px;
+    border-radius: 40% 50% 30% 40%;
+    animation:
+            size 1.5s ease-in-out both,
+            transform 18s ease-in-out infinite both alternate,
+            movement_one 12s ease-in-out infinite both;
+    opacity:.7;
+    position: absolute;
+    left: 75%;
+    top: 40%;
+}
+.shape-blob.one{
+    background:orange;
+    height: 450px;
+    width: 300px;
+    left: 50px;
+    top: 100px;
+    transform: rotate(-180deg);
+    animation:  size 1.5s ease-in-out both, transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
+}
+
+.shape-blob.six{
+    background:orange;
+    height: 170px;
+    width: 130px;
+    left: 160px;
+    top: 200px;
+    transform: rotate(-180deg);
+    animation:  size 1.5s ease-in-out both, transform 5s ease-in-out infinite both alternate, movement_two 5s ease-in-out infinite both;
+}
+
+.shape-blob.four{
+    background:orange;
+    height: 210px;
+    width: 180px;
+    left: 420px;
+    top: 460px;
+    transform: rotate(-180deg);
+    animation:  size 1.5s ease-in-out both, transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
+}
+
+.shape-blob.five{
+    background:orange;
+    height: 400px;
+    width: 280px;
+    left: 480px;
+    top: 530px;
+    transform: rotate(-180deg);
+    animation:  size 1.5s ease-in-out both, transform 12s ease-in-out infinite both alternate, movement_two 18s ease-in-out infinite both;
+}
+
+.shape-blob.two{
+    background:orange;
+    height: 250px;
+    width: 250px;
+    left: 600px;
+    top: 150px;
+    transform: rotate(-180deg);
+    animation: size 1.5s ease-in-out both,transform 10s ease-in-out infinite both alternate, movement_two 10s ease-in-out infinite both;
+}
+
+.shape-blob.three{
+    background:orange;
+    height: 250px;
+    width: 250px;
+    left: 800px;
+    top: 30px;
+    transform: rotate(-180deg);
+    animation: size 1.5s ease-in-out both,transform 7s ease-in-out infinite both alternate, movement_two 23s ease-in-out infinite both;
+}
+
+@keyframes size {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes transform
+{
+    0%,
+    100% { border-radius: 33% 67% 70% 30% / 30% 40% 70% 70%; }
+    20% { border-radius: 37% 63% 51% 49% / 37% 35% 35% 63%; }
+    40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 26%; }
+    60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 73%; }
+    80% { border-radius: 40% 60% 42% 58% / 51% 51% 49% 59%; }
+}
+
+
+@keyframes movement_one
+{
+    0%,
+    100% { transform: none; }
+    50% { transform: translate(50%, 20%) rotateY(10deg) scale(1); }
+}
+
+@keyframes movement_two
+{
+    0%,
+    500% { transform: none; }
+    50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.3);}
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    letter-spacing: 4px;
+    font-weight: 900;
+    color: white;
+    display: flex;
+    line-height: .9em;
+    position: fixed;
+    margin-left: -50%;
+    z-index: 4;
+    text-shadow: 2px 3px 15px rgba(0,0,0,.35);
+}
+body::-webkit-scrollbar {
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(10, 10, 10, 0.4);
+    width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(10, 10, 10, 0.4);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkorange;
+    border-radius: 10px;
+    border: 4px solid darkorange;
+}
+
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+.tex-container{
+    display: inline-flex;
+    padding-left: 10%;
+}
+nav{
+    z-index: 1;
+    text-align: center;
+    border: 2px solid orange;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    font-family: Arial,Serif;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: small;
+}
+li{
+    display: inline-flex;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.tex-container{
+    margin-top: -100px;
+}
+
+.members{
+    top: 30%;
+    width: 55%;
+    display: block;
+    position: fixed;
+    left: 55%;
+    color: white;
+    text-align: center;
+}
+.member:nth-child(2n+1){
+    width: 55%;
+    position: fixed;
+    text-align: center;
+    animation: tracking-in-contract 0.8s ease-in-out both;
+}
+.member:nth-child(2n){
+    width: 55%;
+    position: fixed;
+    text-align: center;
+    animation: tracking-in-expand 0.7s ease-in-out both;
+}
+.member:nth-child(2){
+    margin-top: -1em;
+}
+.member:nth-child(3){
+    margin-top: 1em;
+}
+.member:nth-child(4){
+    margin-top: 3em;
+}
+.member:nth-child(5){
+    margin-top: 5em;
+}
+.members{
+    text-shadow: 2px 3px 15px rgba(0,0,0,.75);
+
+}
+.membertitle{
+    text-align: center;
+    letter-spacing: -.05em;
+    font-size: 50px;
+}
+.titleletter{
+    animation: title 0.1s ease-in-out both;
+}
+
+.open a{
+    color: orange;
+}
+.firstline, .secondline, .thirdline{
+    animation: tw .05s both;
+}
+@keyframes tw{
+    0%{
+        display: none;
+    }
+    100%{
+        display: block;
+    }
+}
+
+@keyframes title {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+        position: fixed;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

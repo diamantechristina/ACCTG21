@@ -3,7 +3,8 @@ html{
 }
 .head{
     text-align: center;
-    font-family: Arial,Serif;
+    font-family: hallowen_inlineregular, h;
+    letter-spacing: 15px;
     color: white;
     opacity: 70%;
 }
@@ -17,12 +18,17 @@ body{
 }
 .navbar{
     text-align: center;
-    border: 2px solid cornflowerblue;
+    border: 2px solid orange;
     border-left: none;
     border-right: none;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 100%;
+    background: black;
+    margin-top: -80px;
     font-family: Arial,Serif;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
     font-size: small;
 }
 li{
@@ -33,6 +39,8 @@ li{
 a{
     text-decoration: none;
     color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 a:hover{
     text-decoration: underline;
@@ -43,12 +51,16 @@ a:active{
 table{
     table-layout: auto;
     text-align: center;
-    border-collapse: collapse;
     margin: auto;
     margin-top: 2%;
     border: 2px solid;
-    background-color: gray;
+    background-color: #0a0a0a;
     opacity: 85%;
+    color: white;
+    border-radius: 10px;
+    animation: glow 2s both;
+    animation-delay: 2s;
+    padding: 10px;
 }
 .problem{
     position: absolute;
@@ -95,19 +107,31 @@ td{
 .data, .second{
     text-align: left;
 }
+
 .noBorder{
     border: none;
-    padding: 0px;
-    background-color: gray;
-    opacity: 70%;
-    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
     padding: 5px;
+    animation: none;
 }
 .tdNoBorder{
     border: none;
     border-radius: 5px;
     padding: 5px;
 
+}
+ .titlenoborder{
+     font-size: 25px;
+     font-weight: 20;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    animation: textglow .7s ease-in-out both;
+    font-family: happy_halloweenregular,h;
+}
+.tdNoBorder:last-child{
+    color: orange;
 }
 .accountTitle{
     text-align: left;
@@ -136,11 +160,6 @@ td{
 }
 .open{
     background-color: darkorange;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
 }
 .lineWidth{
     border-width: 2px;
@@ -167,6 +186,8 @@ td{
     border: none;
     padding-right: 20px;
     padding-left: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .ledgerOutput{
     text-align: center;
@@ -185,4 +206,38 @@ td{
     border: none;
     border-left: 2px solid;
     width: 50%;
+}
+
+@font-face {
+    font-family: 'hallowen_inlineregular';
+    src: url('halloweninline-webfont.woff2') format('woff2'),
+    url('halloweninline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'happy_halloweenregular';
+    src: url('happyhalloween-webfont.woff2') format('woff2'),
+    url('happyhalloween-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@keyframes glow {
+    0%{
+        box-shadow: 0 0 0 orange;
+    }
+    100%{
+        box-shadow: 0 0 20px orange;
+    }
+}
+@keyframes textglow {
+    0%{
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    100%{
+        text-shadow: 0 0 20px darkorange,0 0 20px darkorange, 0 0 30px black,0 0 30px black,0 0 30px black;
+    }
 }
